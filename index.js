@@ -12,7 +12,7 @@ console.log(env);
 const docParserApiKey = env.parsed.DOCPARSERAPIKEY
 console.log("DocParser API Key: ", docParserApiKey);
 const client = new docParser.Client(docParserApiKey); // api key
-const parserId = env.parsed.DOCPARSEREOBID
+const parserId = env.parsed.EOBPARSERID
 
 client.ping().then(function(){
     console.log('Connection established');

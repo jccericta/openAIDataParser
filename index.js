@@ -63,9 +63,9 @@ const parser = await findParserbyId(parsers, parserId);
 const data = await getData(parser);
 const openai = new OpenAIApi(configuration);
 const prompt = "1) Parse the data into this: \n"; 
-const parse = "2) Notes | Payee | Provider | Reference ID | DOS | Charges| Patient|Remark | Claim | Claim Number | Claim Date | Patient | Responsibility \n";
+const parse = "2) Notes | Payee | Provider | Reference ID | DOS | Charges | Patient|Remark | Claim | Claim Number | Claim Date | Patient | Responsibility \n";
 const questions = "3) Then summarize the information by answering the following: Who is the provider? Who is the payee? Who received the services? Who are the responsible parties? How much do each party owe?\n";
-const summary = "4) Then parse the summary into: | Services Summary | Claim Summary | Notes Summary \n";
+const summary = "4) Then parse the summary into: Services | Claims | Patients | Notes \n";
 const instructions = data + "\n" + prompt + parse + questions + summary;
 console.log(instructions);
 const response = await openai.createCompletion({

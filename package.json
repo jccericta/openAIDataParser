@@ -1,0 +1,22 @@
+{
+  "name": "openaidataparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/jccericta/openAIDataParser.git",
+  "author": "John Ericta <jericta@steelgem.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jccericta/openAIDataParser/issues"
+  },
+  "homepage": "https://github.com/jccericta/openAIDataParser#readme",
+  "dependencies": {
+    "docparser-node": "^1.2.2",
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0"
+  },
+  "type": "module"
+}

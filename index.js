@@ -74,7 +74,7 @@ const response = await openai.createCompletion({
     temperature: 0.14,
     max_tokens: 306,
     top_p: 1,
-    best_of: 3,
+    best_of: 15,
     frequency_penalty: 0.75,
     presence_penalty: 0.31,
 });
